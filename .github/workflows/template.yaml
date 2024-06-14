@@ -13,18 +13,18 @@
 #-------------------------------------------------------------------------------------------------------
 
 # Workflow name which is showed in GitHub Actions.
-name: Build Example-Firmware for Example-Device
+name: Openwrt_N100
 
 on:
   workflow_dispatch:
     inputs:
       force-build:
-        description: "Build new firmware anyway"
+        description: "N100"
         required: false
         default: "false"
       ssh:
         description: "SSH connection to Actions"
-        required: false
+        required: true
         default: "false"
 # Uncomment the following to run regularly. Note that the cron expression here does not contain seconds.
 #  schedule:
